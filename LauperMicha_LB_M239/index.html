@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo" onclick="showPage('start')">Micha Lauper</div>
+        <div class="menu" id="menu">
+            <a href="#" class="menuButton" onclick="showPage('start')">Start</a>
+            <a href="#" class="menuButton" onclick="showPage('projects')">Projekte</a>
+            <a href="#" class="menuButton" onclick="showPage('aboutMe')">Über mich</a>
+            <a href="#" class="menuButton" onclick="showPage('references')">Referenzen</a>
+            <a href="#" class="menuButton" onclick="showPage('contact')">Kontakt</a>
+        </div>
+        <div class="sidebarButton" id="sidebarButton" onclick="expandSidebar()">≡</div>
+    </div>
+ 
+    <div class="content">
+ 
+        <div class="page active" id="start">
+            <div class="section splitBox">
+                <div>
+                    <h1 class="title">Application Developer</h1>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <div class="buttons">
+                        <button class="button" onclick="showPage('projects')">Projekte</button>
+                        <button class="button" onclick="showPage('aboutMe')">Über mich</button>
+                    </div>
+                </div>
+                <img class="picture" src="C:\Users\micha\Documents\Schule\Informatik\Modul 293\LauperMicha_LB_M239\Ich.jpeg" alt="Profilbild"></img>
+            </div>
+        </div>
+ 
+        <div class="page" id="projects">
+            <h1 class="title center" style="padding-top: 40px;">Projekte</h1>
+ 
+            <div class="section splitBox">
+                <div>
+                    <h2 class="title">Projekt 1</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    <button class="button">Zum Projekt</button>
+                </div>
+                <img class="picture" src="C:\Users\micha\Documents\Schule\Informatik\Modul 293\LauperMicha_LB_M239\Project.png" alt="Projektbild"></img>
+            </div>
+ 
+            <div class="section splitBox splitBoxReverse">
+                <div>
+                    <h2 class="title">Projekt 2</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                    <button class="button">Zum Projekt</button>
+                </div>
+                <img class="picture" src="C:\Users\micha\Documents\Schule\Informatik\Modul 293\LauperMicha_LB_M239\Project.png" alt="Projektbild"></img>
+            </div>
+        </div>
+ 
+        <div class="page" id="aboutMe">
+            <div class="section splitBox">
+                <img class="picture" src="C:\Users\micha\Documents\Schule\Informatik\Modul 293\LauperMicha_LB_M239\Ich.jpeg" alt="Profilbild"></img>
+                <div>
+                    <h1 class="title">Über mich</h1>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                </div>
+            </div>
+ 
+            <div class="section">
+                <h2 class="title">Lebenslauf</h2>
+ 
+                <div class="entry">
+                    <div class="entryYear">2017 - 2020</div>
+                    <div>
+                        <p class="entryTitle">Primarschule</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                </div>
+ 
+                <div class="entry">
+                    <div class="entryYear">2020 - 2023</div>
+                    <div>
+                        <p class="entryTitle">Sekundarschule</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                </div>
+ 
+                <div class="entry">
+                    <div class="entryYear">2023 - heute</div>
+                    <div>
+                        <p class="entryTitle">Lehre als Applikationsentwickler</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="page" id="contact">
+            <div class="section">
+                <h1 class="title">Kontakt</h1>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <p class="text">E-Mail: laupermicha1@gmail.com</p>
+                <p class="text">Tel: 077 532 32 44</p>
+            </div>
+        </div>
+ 
+        <div class="page" id="references">
+            <div class="section">
+                <h1 class="title">Referenzen</h1>
+ 
+                <div>
+                    <p class="entryTitle">Lehrbetrieb AG</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+ 
+                <div>
+                    <p class="entryTitle">Praktikum XY GmbH</p>
+                    <p class="text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+ 
+    <div class="footer">
+        <p>Kontakt: laupermicha1@gmail.com</p>
+        <p>Impressum</p>
+        <p>© Micha Lauper</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
